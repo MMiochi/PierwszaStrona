@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RWD</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		/* oryginalne duży desktop HD - 12 kolumn*/
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+		html{
+			font-family: 'Montserrat', sans-serif;
+		}
+		h1{
+			font-size: 36px;
+			font-weight:700 ;
+		}
+		p{
+			font-size: 16px;
+			line-height: 24px;
+		}
+		img{
+			width: 100%;
+		}
+		.container{
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 1440px;
+
+		}
+		.subcontainer{
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			display: inline-block;
+		}
+		.row{
+			font-size:0;
+
+		}
+		.floatcol{
+			float: left;
+		}
+		.endfloat{
+			clear: both;
+		}
+		.col{
+
+			display: inline-block;
+			font-size:16px;
+			position: relative;
+			margin:15px;
+			min-height: 10px;
+					
+		}
+
+		.cols-12{
+			width: 1410px;
+		}
+		.cols-11{
+			width: 1290px;
+		}
+
+		.cols-10{
+			width: 1170px;
+		}
+		.cols-9{
+			width: 1050px;
+		}
+
+		.cols-8{
+			width: 930px;
+		}
+		.cols-7{
+			width: 810px;
+		}
+
+		.cols-6{
+			width: 690px;
+		}
+		.cols-5{
+			width: 570px;
+		}
+
+		.cols-4{
+			width: 450px;
+		}
+		.cols-3{
+			width: 330px;
+		}
+
+		.cols-2{
+			width: 210px;
+		}
+		.cols-1{
+			width: 90px;
+		}
+
+		.fullwidth{
+			position: relative;
+			width: 100%;
+			background-color: black;
+		}
+		.header{
+			background-image: url('img/lol.jpg');
+			background-size: cover;
+		}
+		
+		#logo{
+			width: 100%;
+		}
+
+		.navbutton{
+			top:0;
+			line-height: 40px;
+			color: white;
+			background-color: blue;
+			border-radius: 20px;
+			text-align: center;
+			box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .33);
+			border: 2px solid darkblue;
+		}
+		.navbutton:hover{
+			background-color: darkblue;
+		}
+		.separator-60{
+			width: 100%;
+			height: 60px;
+		}
+		.separator-120{
+			width: 100%;
+			height: 120px;
+		}
+
+
+
+		/* media queries - 20px dodane na zapas dla paska przewijania -*/
+
+		/*mały desktop - 9 kolumn*/
+		@media only screen and (max-width: 1460px) {
+			.container{
+				width: 1080px;
+			}
+			.cols-12, .cols-11, .cols-10{
+				width: 1050px;
+			}
+		
+		}
+		
+		/* tablet - 6 kolumn*/
+		
+		@media only screen and (max-width: 1100px) {
+			.container{
+				width: 720px;
+			}
+			.cols-12, .cols-11, .cols-10, .cols-9, .cols-8, .cols-7{
+				width: 690px;
+			}
+		
+		}
+		/*smartphone - 3 kolumny*/
+		@media only screen and (max-width: 740px) {
+			.container{
+				width: 360px;
+			}
+			.cols-12, .cols-11, .cols-10, .cols-9, .cols-8, .cols-7, .cols-6, .cols-5, .cols-4{
+				width: 330px;
+			}
+		
+		}
+
+		
+	</style>
+
+
+</head>
+<body>
+	<div class="fullwidth header">
+		<div class="container">
+			<div class="row navbar">
+				<div class="col cols-12">
+					<div class="separator-120"></div>
+				</div>
+				<div class="col cols-4 floatcol">
+					<img id="logo" src="img/logo.png">
+				</div>
+				<div class="col cols-2 floatcol">
+					<a href="#"> <div class="navbutton"><h3>Strona główna</h3></div></a>
+				</div>
+				<div class="col cols-2 floatcol">
+					<a href="#"> <div class="navbutton"><h3>O nas</h3></div></a>
+				</div>
+				<div class="col cols-2 floatcol">
+					<a href="#"> <div class="navbutton"><h3>Co nowego</h3></div></a>
+				</div>
+				<div class="col cols-2 floatcol">
+					<a href="#"> <div class="navbutton"><h3>Kontakt</h3></div></a>
+				</div>
+				<div class="endfloat"></div>
+				<div class="col cols-12">
+					<div class="separator-120"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col cols-12">
+				<div class="separator-120"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col cols-12">
+				<h1>Aktualnosci</h1>
+			
+				<div class="separator-60"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col cols-6 floatcol">
+				<img src="img/Zeri_0.jpg">
+			</div>
+			<div class="col cols-6 floatcol">
+				<img src="img/group.jpg">
+			</div>
+			<div class="endfloat"></div>
+		</div>
+		<div class="row">
+			<div class="col cols-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	
+		
+	</div>
+	
+</body>
+</html>
